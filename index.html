@@ -4,8 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pokemon Too Many Types | Unique Pokemon Adventure</title>
+    <meta property="og:title" content="Pokemon Too Many Types | Unique Pokemon Adventure">
+    <meta property="og:description" content="Experience a unique Pokemon adventure where types are remixed!">
+    <meta property="og:image" content="https://pokerogues.com/pokémon-too-many-types.webp">
+    <meta property="og:url" content="https://pokerogues.com">
     <script src="https://cdn.tailwindcss.com"></script>
     <script defer data-domain="pokerogues.com" src="https://app.pageview.app/js/script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <script>
         tailwind.config = {
             theme: {
@@ -160,9 +165,24 @@
             <div>
                 <h4 class="text-xl font-bold mb-4">Connect With Us</h4>
                 <div class="flex space-x-4">
-                    <a href="#" class="hover:text-pokemon-yellow">Twitter</a>
-                    <a href="#" class="hover:text-pokemon-yellow">Discord</a>
-                    <a href="#" class="hover:text-pokemon-yellow">Reddit</a>
+                    <a href="https://twitter.com/intent/tweet?url=https://pokerogues.com&text=Check out Pokemon Too Many Types - A unique Pokemon adventure!" target="_blank" rel="noopener noreferrer" class="hover:text-pokemon-yellow transition-colors">
+                        <i class="fab fa-twitter text-2xl"></i>
+                    </a>
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=https://pokerogues.com" target="_blank" rel="noopener noreferrer" class="hover:text-pokemon-yellow transition-colors">
+                        <i class="fab fa-facebook text-2xl"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://pokerogues.com&title=Pokemon Too Many Types&summary=Experience a unique Pokemon adventure where types are remixed!" target="_blank" rel="noopener noreferrer" class="hover:text-pokemon-yellow transition-colors">
+                        <i class="fab fa-linkedin text-2xl"></i>
+                    </a>
+                    <a href="https://reddit.com/submit?url=https://pokerogues.com&title=Pokemon Too Many Types - A unique Pokemon adventure!" target="_blank" rel="noopener noreferrer" class="hover:text-pokemon-yellow transition-colors">
+                        <i class="fab fa-reddit text-2xl"></i>
+                    </a>
+                </div>
+                <div class="mt-4">
+                    <button onclick="copyToClipboard()" class="bg-pokemon-yellow text-pokemon-blue px-4 py-2 rounded-lg hover:bg-opacity-90 transition-colors flex items-center space-x-2">
+                        <i class="fas fa-link"></i>
+                        <span>Copy Link</span>
+                    </button>
                 </div>
             </div>
         </div>
@@ -170,5 +190,15 @@
             2024 Pokemon Too Many Types. All Rights Reserved.
         </div>
     </footer>
+
+    <script>
+    function copyToClipboard() {
+        navigator.clipboard.writeText('https://pokerogues.com').then(function() {
+            alert('Link copied to clipboard!');
+        }).catch(function(err) {
+            console.error('Failed to copy text: ', err);
+        });
+    }
+    </script>
 </body>
 </html>
